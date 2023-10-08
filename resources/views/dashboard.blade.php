@@ -2,36 +2,36 @@
 @section('content')
 <section class="section">
     <div class="section-header"> 
-        <h1>FAQ</h1> 
+        <h1>Perpustakaan</h1> 
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item">
-                FAQ
+            Perpustakaan
             </div>
         </div>
     </div>
 
     <div class="section-body">
         <h2 class="section-title">Deskripsi</h2>
-        <p class="section-lead">Menu yang berkaitan dengan pengelolahan QnA/FAQ pada halaman landing page</p>
+        <p class="section-lead">Menu yang berkaitan dengan pengelolahan buku perpustakaan</p>
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <form action="/add-book" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="card">
                     <div class="card-header">
-                        <h4>Form Tambah FAQ</h4>
+                        <h4>Form Tambah Buku</h4>
                     </div>
                     <div class="card-body">
                         <div class="form-group row mb-4">
                             <label for="inputEmail3" class="text-md-right col-12 col-md-3 col-lg-3 col-form-label">Judul Buku</label>
                             <div class="col-sm-12 col-md-7">
-                                <input type="name" class="form-control" id="title" placeholder="Pertanyaan" name="title">
+                                <input type="name" class="form-control" id="title" placeholder="Judul Buku" name="title">
                             </div>
                         </div>
                         <div class="form-group row mb-4">
                             <label for="inputPassword3" class="text-md-right col-12 col-md-3 col-lg-3 col-form-label">Kuantitas</label>
                             <div class="col-sm-12 col-md-7">
-                                <input type="text" class="form-control" id="quantity" placeholder="Jawaban" name="quantity">
+                                <input type="text" class="form-control" id="quantity" placeholder="Kuantitas" name="quantity">
                             </div>
                         </div>
                         <div class="form-group row mb-4">
